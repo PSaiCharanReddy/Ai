@@ -1,9 +1,9 @@
 import requests
 
-class GeminiAI:
+class GroqAI:
     def __init__(self, api_key):
         self.api_key = api_key
-        self.base_url = "https://api.gemini-ai.com"
+        self.base_url = "https://api.groq.ai"
 
     def analyze_job_posting(self, job_description):
         url = f"{self.base_url}/analyze-job"
@@ -20,6 +20,6 @@ class GeminiAI:
         return response.json()
 
 # Example usage
-# gemini = GeminiAI(api_key="your_api_key_here")
-# result = gemini.analyze_job_posting("Job description here")
+# groq = GroqAI(api_key="your_api_key_here")
+# result = groq.analyze_job_posting("Job description here")
 # print(result)

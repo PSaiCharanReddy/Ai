@@ -3,7 +3,7 @@ import requests
 class CoverLetterGenerator:
     def __init__(self, api_key):
         self.api_key = api_key
-        self.base_url = "https://api.gemini.ai/v1"
+        self.base_url = "https://api.groq.ai/v1"
 
     def generate_cover_letter(self, job_description, user_details):
         url = f"{self.base_url}/generate-cover-letter"
