@@ -1,0 +1,12 @@
+{
+  "name": "job-app-networking-bot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "start": "echo 'React app placeholder. Replace with actual implementation.'"
+  }
+}
