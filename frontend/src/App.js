@@ -1,25 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ResumeAnalysis from './components/ResumeAnalysis';
-import ExperienceMatching from './components/ExperienceMatching';
-import CoverLetter from './components/CoverLetter';
-import InterviewPractice from './components/InterviewPractice';
-import Settings from './components/Settings';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <h1>Job Application & Networking Bot</h1>
-        <Routes>
-          <Route path="/resume-analysis" element={<ResumeAnalysis />} />
-          <Route path="/experience-matching" element={<ExperienceMatching />} />
-          <Route path="/cover-letter" element={<CoverLetter />} />
-          <Route path="/interview-practice" element={<InterviewPractice />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
